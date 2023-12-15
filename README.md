@@ -37,3 +37,4 @@ Additional Resources:
 VirusTotal API documentation: https://developers.virustotal.com/reference
 requests library documentation: https://docs.python-requests.org/en/latest/
 webbrowser library documentation: https://docs.python.org/3/library/webbrowser.html
+Written by *Fatma Kamel*
