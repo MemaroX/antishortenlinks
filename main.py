@@ -4,7 +4,11 @@ import time
 import webbrowser
 
 def is_safe(url):
-    api_key = 'APIKEY'
+    import os
+    api_key = os.getenv('VIRUSTOTAL_API_KEY')
+    if not api_key:
+        print("Error: VirusTotal API key not found. Please set the VIRUSTOTAL_API_KEY environment variable.")
+        return False
     url_id = requests.get('https://www.virustotal.com/vtapi/v2/url/report',
                           params={'apikey': api_key, 'resource':url})
     report = url_id.json()

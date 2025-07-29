@@ -1,0 +1,3 @@
+Fix: Secure API key handling
+Enhance: Improve error handling and user messages
+Docs: Add LICENSE, requirements.txt, and update README.md for professionalism
